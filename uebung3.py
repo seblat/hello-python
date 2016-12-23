@@ -1,17 +1,17 @@
 import math
 
 N = 3
-middle = (N*3)+2
+MIDDLE = (N*3)+2
+format_row = " " * (MIDDLE-1) + "{middle}" + " " * (MIDDLE-1)
+
 
 ## Row 1
-print(" " * (middle-1), end="")
-print("y", end="")
-print(" " * (middle-1),end="\n\n")
+print(format_row.format(middle = "y"))
+print()
 
 ## Row 2
-print(" " * (middle-1), end="")
-print("^", end="")
-print(" " * (middle-1),end="\n")
+print(format_row.format(middle = "^"))
+
 
 for row in range(0,(N*2)+1,1):
     if (N-row) == 0: # prints vertical middle
@@ -25,9 +25,9 @@ for row in range(0,(N*2)+1,1):
 
 
     else:
-        print(" " * (middle-1), end="")
+        print(" " * (MIDDLE-1), end="")
         print("|",(N-row), end="\n")
-        print(" " * (middle-2),"|", end="")
+        print(" " * (MIDDLE-2),"|", end="")
 
 
-    print("", end="\n")
+    print()
