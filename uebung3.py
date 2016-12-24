@@ -2,7 +2,7 @@ import math
 
 N = 3
 MIDDLE = (N*3)+2
-format_row = " " * (MIDDLE-1) + "{middle}" + " " * (MIDDLE-1)
+format_row = " " * (MIDDLE-1) + "{middle}"
 
 
 ## Row 1
